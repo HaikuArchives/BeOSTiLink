@@ -29,5 +29,5 @@ DEBUGGER = FALSE
 COMPILER_FLAGS = 
 LINKER_FLAGS = 
 
-## include the Be makefile-engine
-include /boot/develop/etc/makefile-engine
+## include the Haiku makefile-engine
+include /boot/system/develop/etc/makefile-engine
