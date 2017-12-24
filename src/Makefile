@@ -30,4 +30,6 @@ COMPILER_FLAGS =
 LINKER_FLAGS = 
 
 ## include the Haiku makefile-engine
-include /boot/system/develop/etc/makefile-engine
+DEVEL_DIRECTORY := \
+	$(shell findpaths -r "makefile_engine" B_FIND_PATH_DEVELOP_DIRECTORY)
+include $(DEVEL_DIRECTORY)/etc/makefile-engine
